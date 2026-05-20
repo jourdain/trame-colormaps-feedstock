@@ -13,7 +13,7 @@ source:
   sha256: af611e657510218fd436decbc0fbec4c283c99dd23f06a39a8666ca50af7bfa9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -28,7 +28,7 @@ requirements:
     - trame >=3
     - trame-dataclass >=2
     - trame-vuetify >=3.2
-    - vtk >=9.6.1
+    - vtk
 
 tests:
   - python:
